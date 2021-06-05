@@ -10,6 +10,7 @@ class Client():
         self.device_name = socket.gethostname()
         self.cam = WebcamVideoStream().start()
         time.sleep(2.0)
+        print("Client started.")
 
     def client_loop(self):
         while True:  # send images as stream until Ctrl-C
